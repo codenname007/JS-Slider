@@ -28,9 +28,9 @@
 }
 
 .container{
-  height: 400px;
+  height: 100vh;
   width: 100vw;
-  line-height: 400px;
+  line-height: 100vh;
   font-size: 100px;
   position: relative;
   overflow: hidden;
@@ -62,11 +62,10 @@
 
 .container .slide-inner{
   width: 400vw;
-  height: 400px;
-  line-height: 400px;
+  height: 100vh;
   display: flex;
   text-align: center;
-  /* transform: translateX(-100vw); */
+  transition: 0.5s;
 }
 
 
@@ -77,16 +76,20 @@
 
 
 .container .slide-inner div:nth-child(1){
-  background-color: red;
+  background : url(./image/1.jpg) no-repeat center center;
+  background-size: cover;
 }
 .container .slide-inner div:nth-child(2){
-  background-color: orange;
+  background : url(./image/2.jpg) no-repeat center center;
+  background-size: cover;
 }
 .container .slide-inner div:nth-child(3){
-  background-color: yellow;
+  background : url(./image/3.jpg) no-repeat center center;
+  background-size: cover;
 }
 .container .slide-inner div:nth-child(4){
-  background-color: dodgerblue;
+  background : url(./image/4.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .container .btn{
