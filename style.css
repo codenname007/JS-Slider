@@ -1,0 +1,111 @@
+@import "reset.css";
+
+:root {
+  /*Color*/
+  --white-color: #fff;
+  --black-color: #0e0d0c;
+  --blue-color: #045fd4;
+  --red-color: #ff000;
+  --gold-color: gold;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /*Size*/
+  --padding: 12px;
+  --avatar-size: 250px;
+  --frame-width-size : 600px;
+  --frame-height-size : 400px;
+
+  /*FontSize*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+.body{
+  margin: 0;
+}
+
+.container{
+  height: 400px;
+  width: 100vw;
+  line-height: 400px;
+  font-size: 100px;
+  position: relative;
+  overflow: hidden;
+  margin:0;
+  color :white;
+}
+
+.container .arrowleft{
+  position : absolute;
+  bottom : 0;
+  padding : 0 50px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.container .arrowleft .fa-solid{
+  display : none;
+}
+
+.container .arrowright{
+  position : absolute;
+  bottom : 0;
+  padding : 0 50px;
+  right : 0;
+  font-size: 50px;
+  cursor: pointer;
+
+}
+
+.container .slide-inner{
+  width: 400vw;
+  height: 400px;
+  line-height: 400px;
+  display: flex;
+  text-align: center;
+  /* transform: translateX(-100vw); */
+}
+
+
+.container .slide-inner div{
+  width: 100vw;
+}
+
+
+
+.container .slide-inner div:nth-child(1){
+  background-color: red;
+}
+.container .slide-inner div:nth-child(2){
+  background-color: orange;
+}
+.container .slide-inner div:nth-child(3){
+  background-color: yellow;
+}
+.container .slide-inner div:nth-child(4){
+  background-color: dodgerblue;
+}
+
+.container .btn{
+  display :flex;
+  position: absolute;
+  bottom : 30px;
+  left : 50%;
+  transform: translate(-50%, 0);
+}
+
+.container .btn span{
+  background-color: var(--grey-dark-color);
+  width: 50px;
+  height: 5px;
+  margin : 10px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.clicked{
+  background-color: white !important;
+}
